@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lessons</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class ="header-logo">
+<%= link_to("プログラミング学習する人には挫折者が多い！これが最高？！","/") %>
+      </div>
+
+      <ul class ="header-menus">
+        <li>
+          <%= link_to("挫折する方の特徴","/about") %>
+        </li>
+        <li>
+          <%= link_to("投稿一覧","/missions/index") %>
+        </li>
+        <li>
+          <%= link_to("ご意見箱","/missions/new") %>
+        </li>
+
+
+
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>
