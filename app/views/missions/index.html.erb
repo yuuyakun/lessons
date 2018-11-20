@@ -1,5 +1,7 @@
 <div class="container">
     <% @missions.each do |mission| %>
-        <%= mission.content %>
+      <div class="posts-index-item">
+        <%= link_to(mission.content,"/missions/#{mission.id}") %>
+      </div>
     <% end %>
 </div>
